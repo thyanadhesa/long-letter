@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To My Dearest</h1>
+        <p class="letter">
+            My love, words can hardly express the depth of my feelings for you. 
+            Every moment I spend with you, I feel like the luckiest person in the world. 
+            Your smile brightens my days, and your laughter is the sweetest melody to my ears. 
+            You are my heart's desire, the one I dream of, the one I want to share my life with.
+            <br><br>
+            I cherish every memory we've created together, from the simplest of moments to the most 
+            unforgettable ones. Your love is a light that guides me through the darkest days, and I 
+            promise to stand by your side through thick and thin.
+            <br><br>
+            There is nothing more beautiful than the love we share. I hope this letter is a small 
+            reflection of the boundless love I hold for you in my heart. You mean the world to me, 
+            and I am endlessly grateful for your presence in my life.
+            <br><br>
+            With all my love, forever and always,
+            <br>
+            Your Beloved
+        </p>
+    </div>
+    <audio id="background-music" autoplay loop>
+        <source src="music.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button onclick="toggleMusic()">Play/Pause Music</button>
+
+    <script>
+        function toggleMusic() {
+            const music = document.getElementById('background-music');
+            if (music.paused) {
+                music.play();
+            } else {
+                music.pause();
+            }
+        }
+    </script>
+</body>
+</html>
